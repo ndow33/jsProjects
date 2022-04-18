@@ -40,9 +40,11 @@ function populateUi() {
     }
 
     const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+    const selectedMoviePrice = localStorage.getItem('selectedMoviePrice');
 
     if(selectedMovieIndex !== null) {
         movieSelect.selectedIndex = selectedMovieIndex;
+        ticketPrice = selectedMoviePrice;
     }
 }
 
